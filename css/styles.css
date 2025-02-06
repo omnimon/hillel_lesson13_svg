@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+svg {
+  border: 2px solid #333;
+  background-color: white;
+}
+
+/* 🔹 Квадрат */
+.square {
+  fill: #ffcc00;
+  stroke: #ff6600;
+  stroke-width: 5px;
+}
+
+/* 🔹 Прямокутник */
+.rectangle {
+  fill: #66ccff;
+  stroke: #0033cc;
+  stroke-width: 5px;
+}
+
+/* 🔹 Коло (з анімацією) */
+.circle {
+  fill: #99ff99;
+  stroke: #009900;
+  stroke-width: 5px;
+}
+
+/* Анімація для кола */
+@keyframes changeColor {
+  0% {
+    fill: #99ff99;
+    stroke: #009900;
+  }
+  50% {
+    fill: #ff6666;
+    stroke: #cc0000;
+  }
+  100% {
+    fill: #99ff99;
+    stroke: #009900;
+  }
+}
+
+.animated {
+  animation: changeColor 2s infinite alternate;
+}
+
+/* 🔹 Еліпс */
+.ellipse {
+  fill: #ff99cc;
+  stroke: #cc0066;
+  stroke-width: 5px;
+}
